@@ -1,0 +1,136 @@
+@import "../../themes.scss";
+
+.footer-page {
+  // position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: $primary-color;
+
+  .container {
+    width: $width-container;
+    height: auto;
+
+    .logo {
+      padding: 20px;
+      .image {
+        justify-content: center;
+      }
+      .text {
+        color: white;
+        text-align: center;
+        font-size: $font-body-size;
+        font-family: $font-title;
+
+        @include laptop {
+          font-size: $font-body-laptop;
+        }
+
+        @include tablet {
+          font-size: $font-body-tablet;
+        }
+
+        @include mobile-large {
+          font-size: $font-body-size;
+        }
+        @include mobile {
+          font-size: $font-body-size;
+        }
+
+        @include mobile-small {
+          font-size: $font-body-size;
+        }
+      }
+    }
+
+    .text-style {
+      // margin-left: 5px;
+      color: white;
+      font-size: $font-body-laptop;
+      font-family: $font-title;
+
+      @include laptop {
+        font-size: $font-body-laptop;
+      }
+
+      @include tablet {
+        font-size: $font-body-tablet;
+      }
+
+      @include mobile-large {
+        font-size: $font-body-size;
+      }
+      @include mobile {
+        font-size: $font-body-size;
+      }
+
+      @include mobile-small {
+        font-size: $font-body-size;
+      }
+    }
+
+    .box-mark {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .list {
+        .list_item {
+          line-height: normal;
+          font-family: $font-body;
+          color: white;
+          .icon-phone {
+            font-size: $font-body-size;
+
+            @include laptop {
+              font-size: $font-body-laptop;
+            }
+
+            @include tablet {
+              font-size: $font-body-tablet;
+            }
+
+            @include mobile-large {
+              font-size: $font-body-size;
+            }
+            @include mobile {
+              font-size: $font-body-size;
+            }
+
+            @include mobile-small {
+              font-size: $font-body-size;
+            }
+          }
+          .icon-item {
+            // margin-bottom: 5px;
+            font-size: $font-title-tablet;
+            
+            @include laptop {
+              font-size: $font-subtitle-laptop;
+            }
+
+            @include tablet {
+              font-size: $font-body-tablet;
+            }
+
+            @include mobile-large {
+              font-size: $font-body-size;
+            }
+            @include mobile {
+              font-size: $font-body-size;
+            }
+
+            @include mobile-small {
+              font-size: $font-body-size;
+            }
+          }
+        }
+      }
+
+      .text {
+        font-family: $font-body;
+        color: white;
+      }
+    }
+  }
+}

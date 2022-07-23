@@ -1,0 +1,273 @@
+@import "../../themes.scss";
+
+.hightlight-page {
+  width: 100%;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  display: flex;  
+  justify-content: center;
+  padding-bottom: 30px;
+
+  .container {
+      width: $width-container;
+
+      .box-title {
+        width: 100%;
+        display: flex;   
+        justify-content: center;
+
+        .title {
+          font-family: $font-title;
+          color: $primary-color;
+          text-align: center;
+          padding-top: 60px;
+          padding-bottom: 30px;
+        }
+
+      }
+
+      .image-phone {
+        display: none;
+
+        @include tablet {       
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: flex-start;
+        }
+
+        @include mobile-large {     
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: flex-start;
+        }
+
+        @include mobile {     
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: flex-start;
+        }
+
+        @include mobile-small {   
+          margin-top: 35px;  
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: flex-start;
+        }
+
+      }
+
+      .main-grid {
+        padding: 1rem 0;
+        display: flex;   
+        justify-content: center;    
+        width: 100%;
+        height: fit-content;
+       
+        @include tablet{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+
+        @include mobile-large {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+
+        @include mobile {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+
+        @include mobile-small {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+
+        .text-container {          
+          display: flex;
+          align-items: center;
+
+          @include tablet {
+          
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            
+          }
+
+          @include mobile-large {            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;           
+          }
+
+          @include mobile {          
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+          }
+          @include mobile-small {           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;           
+          }
+
+          .sub-titile {
+            font-size: $font-subtitle-size;
+            color: $primary-color;
+            font-family: $font-body;
+            
+            @include tablet {
+              font-size: $font-subtitle-size;                           
+              width: 100%;
+            }
+        
+            @include mobile-large {
+              font-size: 18px;
+             
+            }
+            @include mobile {
+              font-size: 18px;
+              
+            }
+            @include mobile-small {
+              font-size: 18px;
+              
+            }
+          }
+
+          .discraption-one {
+            color: $primary-color;
+            font-size: $font-body-size;
+            font-family: $font-body;
+            height: fit-content;
+
+            @include tablet {
+              font-size: $font-body-size;              
+              width: 100%;             
+            }
+
+            @include mobile-large {
+              font-size: 16px;              
+              width: 100%;              
+            }
+            @include mobile {
+              font-size: 18px;
+              width: 100%;               
+             
+            }
+            @include mobile-small {
+              font-size: 18px;
+              width: 100%;             
+               
+            }
+            
+          }
+
+        }
+
+        .text-container2 {         
+          display: flex;
+          align-items: center;
+
+          .stack-container {
+
+            .sub-title2 {
+              color: $primary-color;
+              font-size: $font-subtitle-size;
+              font-family: $font-body;
+
+              @include mobile-large {
+                font-size: 18px;
+              }
+              @include mobile {
+                font-size: 18px;
+              }
+              @include mobile-small {
+                font-size: 18px;
+              }
+            }
+
+            .discraption-two {
+              color: $primary-color;
+              font-size: $font-body-size;
+              font-family: $font-body;
+              height: auto;
+        
+              @include mobile-large {
+                font-size: 16px;                
+                width: 100%;
+              }
+              @include mobile {
+                font-size: 18px;
+                width: 100%;                 
+              }
+              @include mobile-small {
+                font-size: 18px;
+                width: 100%;               
+              }
+            }
+          }
+        }
+      } // Main-grid
+
+      .image-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include tablet {
+          display: none;
+        }
+
+        @include mobile-large {
+          display: none;
+        }
+
+        @include mobile {
+          display: none;
+        }
+
+        @include mobile-small {
+          display: none;
+        }
+
+        .hl-image {
+          width: 826px;
+          height: 520px;
+          z-index: 1;
+          @include mobile-large {
+            display: none;
+          }
+        }
+      }
+
+      .main-grid-phone {
+        display: none;
+      }
+    }
+}

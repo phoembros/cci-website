@@ -1,0 +1,163 @@
+@import "../../themes.scss";
+
+.contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .stack-main-contact {
+    margin: 50px 0px;
+    width: $width-container;
+    @include laptop {
+      width: $width-laptop;
+    }
+    @include tablet {
+      width: $width-laptop;
+    }
+    @include mobile-large {
+      width: $width-laptop;
+    }
+    @include mobile {
+      width: $width-laptop;
+    }
+    @include mobile-small {
+      width: $width-laptop;
+    }
+
+    .main-contact {
+      width: 100%;
+      display: flex;
+      @include mobile-large {
+        display: block;
+      }
+      @include mobile {
+        display: block;
+      }
+      @include mobile-small {
+        display: block;
+      }
+      .contact-title {
+        width: 50%;
+        height: fit-content;
+        padding: 100px 0px 20px 160px;
+        @include laptop {
+          padding: 60px 0px 0px 60px;
+        }
+        @include tablet {
+          padding: 0px;
+        }
+        @include mobile-large {
+          width: 100%;
+          padding: 0px 0px 40px 0px;
+        }
+        @include mobile {
+          width: 100%;
+            padding: 0px 0px 40px 0px;
+        }
+        @include mobile-small {
+          width: 100%;
+            padding: 0px 0px 40px 0px;
+        }
+
+        .slide-title {
+          font-size: $font-title-size;
+          @include laptop {
+            font-size: $font-title-laptop;
+          }
+          @include tablet {
+            font-size: $font-title-laptop;
+          }
+          @include mobile-large {
+            font-size: $font-title-laptop;
+          }
+          @include mobile {
+            font-size: $font-title-laptop;
+          }
+          @include mobile-small {
+            font-size: $font-title-laptop;
+          }
+          font-family: $font-title;
+          color: #fff;
+        }
+        .flex-top-details {
+          margin-top: 40px;
+          margin-bottom: 40px;
+
+          .location-icon {
+            font-size: 80px;
+            @include tablet {
+              font-size: 60px;
+            }
+            @include mobile-large {
+              font-size: 60px;
+            }
+            @include mobile {
+              font-size: 60px;
+            }
+            @include mobile-small {
+              font-size: 60px;
+            }
+          }
+
+          .slide-body {
+            font-size: $font-body-size;
+            @include laptop {
+              font-size: $font-body-laptop;
+            }
+            @include tablet {
+              font-size: $font-body-tablet;
+            }
+            @include mobile-large {
+              font-size: $font-body-tablet;
+            }
+            @include mobile {
+              font-size: $font-body-tablet;
+            }
+            @include mobile-small {
+              font-size: $font-body-tablet;
+            }
+            font-family: $font-body;
+            color: #fff;
+            margin-left: 20px;
+          }
+        }
+
+        .flex-contact-details {
+          margin-top: 10px;
+          margin-left: 20px;
+          .details-icon {
+            font-size: 26px;
+          }
+          .details-title {
+            margin-left: 20px;
+            font-size: $font-body-size;
+            @include laptop {
+              font-size: $font-body-laptop;
+            }
+            font-family: $font-body;
+          }
+        }
+      }
+
+      .contact-picture {
+        width: 50%;
+        @include mobile-large {
+          width: 100%;
+        }
+        @include mobile {
+          width: 100%;
+        }
+        @include mobile-small {
+          width: 100%;
+        }
+        display: flex;
+        justify-content: right;
+        // background-color: red;
+
+        .main-image {
+          width: 500px !important;
+        }
+      }
+    }
+  }
+}

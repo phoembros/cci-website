@@ -1,0 +1,237 @@
+@import "../../themes.scss";
+
+.product-page {
+  // height: 85vh;
+  color: #fff;
+
+  .container {
+    display: flex;
+  }
+}
+
+.detailProduct {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // background-color: #fff;
+
+  .main-subdetail {    
+    display: flex;  
+    justify-content: center;
+
+    .guide {
+      margin-top: 150px;
+      width: $width-container;
+
+      @include mobile-small {
+        margin-top: 100px;
+      }
+      @include mobile {
+        margin-top: 50px;
+      }
+      @include mobile-large {
+        margin-top: 50px;
+      }
+      @include tablet {
+        margin-top: 50px;
+      }
+
+
+      .guide-center {
+
+        .content {
+
+          .make-title {
+            font-size: $font-subtitle-size;
+            font-family: $font-title;
+            color: #fff;
+            letter-spacing: 5px;
+            line-height: 3rem;
+          }
+
+        
+          .make-body {
+            margin-top: 50px;
+            font-size: $font-body-size;
+            font-family: $font-body;
+            color: #fff;
+            line-height: 2.5rem;
+          }
+
+          .divider {
+            margin-top: 5rem;
+            border: 0.5px solid #fff;
+          }
+
+        }
+
+        .products-picture {
+          width: 100%;
+          margin-top: -120px;
+          margin-bottom: -260px;
+          z-index: 100;
+          display: flex;
+          justify-content: right;
+
+          @include mobile-small {
+            display: none;
+            z-index: 1;
+          }
+
+          @include mobile {
+            display: none;
+            z-index: 1;
+          }
+
+          @include mobile-large {
+            display: none;
+            z-index: 1;
+          }
+
+          @include tablet {
+            display: none;
+            z-index: 1;
+          }
+
+          @include laptop {
+            z-index: 1;
+          }
+
+          @include desktop {
+            z-index: 1;
+          }
+
+          .main-image {
+              width: 400px !important;
+          }
+
+        }
+      }
+
+      .products-between {
+        width: 100%;
+        margin-top: -220px;
+        margin-bottom: -260px;
+        z-index: 50;
+        display: flex;
+        justify-content: right;        
+        height: auto;
+
+        @include mobile-small {
+          justify-content: center;
+          z-index: 1;
+        }
+        @include mobile {
+          justify-content: center;
+          z-index: 1;
+        }
+        @include mobile-large {
+          justify-content: center;
+          z-index: 1;
+        }
+        @include tablet {
+          justify-content: center;
+          z-index: 1;
+        }
+
+        @include laptop {
+          // display: none;
+          z-index: 1;
+        }
+
+        @include laptop {
+          z-index: 1;
+        }
+
+        @include desktop {
+          z-index: 1;
+        }
+
+
+        .main-image {
+          width: 800px !important;
+
+          @include mobile-small {
+              width: 300px !important;
+          }
+          @include mobile {
+              width: 300px !important;
+          }
+          @include mobile-large {
+              width: 300px !important;
+          }
+          @include tablet {
+              width: 300px !important;
+          }
+          
+
+        }
+      }
+      // background-color: white;
+
+      .image-style {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    //under main
+  }
+
+  .main-center {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    display: flex;  
+    justify-content: center;
+    padding-top: 200px;
+
+    .sub-main {
+      width: $width-container;      
+
+      .content {
+        // display: flex;
+        // justify-content: center;
+        .make-title {
+          font-size: $font-subtitle-size;
+          font-family: $font-title;
+          color: $primary-color;
+          letter-spacing: 5px;
+          line-height: 3rem;
+          text-decoration: underline;
+        }
+
+        .divider {
+          margin-top: 5rem;
+          border: 0.5px solid blue;
+        }
+      }
+
+      .main-benif {
+        margin-top: 30px;
+
+        .text {
+          text-align: center;
+          margin-top: 2rem;
+          font-family: $font-title;
+        }
+        .guide-under {
+          padding-bottom: 10%;
+          .avatar-text {
+            margin-top: 3%;
+
+            .context {
+              color: $primary-color;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-family: $font-title;
+            }
+          }
+        }
+      }
+    }
+  }
+}

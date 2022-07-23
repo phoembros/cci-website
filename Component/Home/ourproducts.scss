@@ -1,0 +1,113 @@
+@import "../../themes.scss";
+
+.center-ourproduct {
+  // display: block;
+  height: fit-content;
+
+  .slide-title {
+    width: 100%;
+    text-align: center;
+    font-size: $font-subtitle-size;
+    font-family: $font-title;
+    margin-top: 40px;
+    color: #fff;
+    height: 15px;
+    background-color: $background-primary;
+    text-decoration: underline;
+    // position: relative;
+  }
+
+  .slide-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // background-color: #fff;
+    margin-top: 100px;
+    height: 400px;    
+    position: absolute;
+    z-index: 2;
+
+    @include mobile-large {
+      height: 400px;    
+    }
+    @include mobile {
+      height: 340px;    
+    }
+    @include mobile-small {
+      height: 340px;    
+    }
+
+    .our-product {
+      width: 80%;
+
+      .slick-dots li button:before {
+        display: inherit !important;
+        background-color: #fff;
+        font-family: "slick";
+        font-size: 10px !important;
+        line-height: 30px !important;
+        position: relative;
+        // z-index: 10;
+      }
+
+      .product-container {
+        padding: 20px 20px;       
+        height: 400px;
+
+        @include mobile-large {
+          padding: 0px;             
+        }
+        @include mobile {
+          padding: 0px;             
+        }
+        @include mobile-small {
+            padding: 0px;             
+        }
+
+        .box-layout {
+          width: 100%;
+          margin-top: -50px;
+
+          @include mobile-large {
+            margin-top: 0px;
+          }
+          @include mobile {
+            margin-top: 0px;
+          }
+          @include mobile-small {
+            margin-top: 0px;
+          }
+          
+        }
+
+        .slide-point {
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .box-button {
+    margin-top: 150px;
+    height: 500px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+
+    .btn-view {
+      margin-top: 400px;
+      margin-bottom: 50px;
+      border-radius: 40px;
+      width: 200px;
+      padding: 24px 0px;
+      text-align: center;
+      color: $primary-color;
+      font-size: $font-body-size;
+      font-family: $font-body;
+    }
+  }
+}

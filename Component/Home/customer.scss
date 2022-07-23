@@ -1,0 +1,162 @@
+@import "../../themes.scss";
+
+.customer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+
+  .container {
+    width: $width-container;
+
+    .guide {
+      background-color: white;
+
+      .title {
+        color: $primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-title;
+        font-size: $font-subtitle-size;
+        text-decoration: underline;
+        margin-bottom: 5%;
+      }
+      .container-image {
+        // margin-left: 20px;
+        .image-style {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .image-item {
+            // width: 200px;
+            @include laptop {
+              width: 200px;
+            }
+            @include tablet {
+               width: 150px;
+            }
+
+            @include mobile-large {
+              width: 150px;
+            }
+
+            @include mobile {
+              width: 150px;
+            }
+            @include mobile-small {
+              width: 150px;
+            }
+          }
+        }
+      }
+
+
+      .simple-grid {
+      
+        margin-bottom: 10%;
+        .image-style {
+          width: 100%;
+          .container-image {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .image-item {
+              width: 400px;
+              height: 400px;
+              // padding: 10px;
+              border-radius: 50%;
+
+              @include laptop {
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                // display: block;
+              }
+              @include tablet {
+                width: 300px;
+                height: 300px;
+                border-radius:  50%;
+              }
+
+              @include mobile-large {
+                width: 300px;
+                height: 300px;
+                border-radius:  50%;
+              }
+
+              @include mobile {
+                width: 300px;
+                height: 300px;
+                border-radius:  50%;
+              }
+              @include mobile-small {
+                width: 300px;
+                height: 300px;
+                border-radius:  50%;
+              }
+            }
+          }
+          .title-context {
+            color: $primary-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-title;
+            font-size: $font-body-size;
+
+            @include laptop {
+              font-size: $font-body-size;
+            }
+
+            @include tablet {
+              font-size: $font-body-size;
+            }
+
+            @include mobile-large {
+              font-size: $font-body-size;
+            }
+
+            @include mobile {
+              font-size: $font-body-size;
+            }
+
+            @include mobile-small {
+              font-size: $font-body-size;
+            }
+          }
+
+
+          .context {
+            color: $primary-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-title;
+
+            @include laptop {
+              font-family: $font-title;
+            }
+
+            @include tablet {
+              font-family: $font-title;
+            }
+
+            @include mobile-large {
+              font-family: $font-title;
+            }
+
+            @include mobile {
+              font-family: $font-title;
+            }
+
+            @include mobile-small {
+              font-family: $font-title;
+            }
+          }
+        }
+      }
+      // }
+    }
+  }
+}

@@ -1,0 +1,298 @@
+@import "../../themes.scss";
+
+// .production {
+
+//   .product-layout {
+//     width: $width-container;
+//     @include mobile-small {
+//       width: 150px;
+//       width: $width-container;
+   
+     
+      
+//     }
+    
+//     .guide {
+//       margin-top: 150px;
+//       width: $width-container;
+//       .grid-title-top{
+
+//       .make-title {
+//         font-size: $font-title-size;
+//         font-family: $font-title;
+//         color: #fff;
+//         letter-spacing: 5px;
+//         line-height: 5rem;
+
+//         @include laptop {
+//           font-size: $font-title-laptop;
+
+//         }
+//         @include tablet {
+//           width: 100%;
+//           font-size: $font-title-laptop;
+//         }
+//         @include mobile-large {
+//           width: 100%;
+//           font-size: $font-subtitle-laptop;
+//         }
+//         @include mobile {
+//           width: 100%;
+//           font-size: $font-subtitle-laptop;
+//         }
+//         @include mobile-small {
+//           font-size: $font-subtitle-laptop;
+//           line-height: 30px;
+        
+          
+         
+          
+//         }
+//       }
+//       .main-product {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+
+//         .make-body {
+//           margin-top: 50px;
+//           font-size: $font-body-laptop;
+//           font-family: $font-body;
+//           color: #fff;
+//           line-height: 2.5rem;
+
+      
+//         }
+//       }
+//       .divider {
+//         margin-top: 5rem;
+//         border: 0.5px solid #fff;
+//         text-decoration: underline;
+//       }
+//     }
+
+//       .products-picture {
+//         width: 100%;
+//         margin-top: -60px;
+//         margin-bottom: -160px;
+//         z-index: 100;
+//         display: flex;
+//         justify-content: right;
+//         // background-color: red;
+//         @include laptop {
+//           width: 100%;
+//           margin-top: 170px;
+//           font-size: 10px;
+//         }
+//         @include tablet {
+//           width: 100%;
+//           margin-top: 250px;
+//         }
+//         @include mobile-large {
+//           width: 100%;
+//         }
+//         @include mobile {
+//           width: 100%;
+//           padding-bottom: 500px;
+//         }
+//         @include mobile-small {
+//           width: 100%;
+//           margin-top: 985px;
+//           display: none;
+//         }
+
+//         .main-image {
+//           width: 500px !important;
+//           @include mobile-small {
+//             width: 600px !important;
+//           }
+//         }
+//       }
+
+//       .products-between {
+//         width: 100%;
+//         margin-top: -10px;
+//         margin-bottom: -150px;
+//         z-index: 50;
+//         display: flex;
+//         justify-content: right;
+//         // background-color: red;
+//         height: auto;
+
+//         @include laptop {
+//           width: 100%;
+//           margin-top: 205px;
+//         }
+//         @include tablet {
+//           width: 100%;
+//           margin-top: 265px;
+//         }
+//         @include mobile-large {
+//           width: 100%;
+//         }
+//         @include mobile {
+//           width: 100%;
+//         }
+//         @include mobile-small {
+//           width: 100%;
+//           margin-top: 990px;
+//           display: none;
+//         }
+
+//         .main-image {
+//           width: 800px !important;
+//         }
+//       }
+//       // background-color: white;
+
+//       .image-style {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//       }
+//     }
+//   }
+// }
+
+
+.allproduct
+{
+  width: 100%;
+  justify-content: center;
+  .main-containner
+  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .box-containner
+    {
+      width: $width-container;
+      @include laptop {
+        width: $width-laptop;
+      }
+      @include tablet {
+        width: $width-laptop;
+      }
+      @include mobile {
+        width: $width-laptop;
+      }
+      @include mobile-small {
+        width: $width-laptop;
+      }
+      .container-Grid
+      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem;
+
+        .container-text
+        {
+          padding: 0 5rem;
+          line-height: 35px;
+
+          @include laptop {
+            padding: 0 2rem;
+          }
+          @include tablet {
+            padding: 3rem 1rem;
+          }
+          @include mobile {
+            padding: 3rem 0rem;
+          }
+          @include mobile-small {
+            padding: 3rem 0rem;
+          }
+          .header-title 
+          {
+            font-family: $font-title;
+            font-size: $font-title-size;
+            color: #ffffff;
+            line-height: 75px;
+
+            @include laptop {
+              font-size: $font-title-laptop;
+            }
+            @include tablet {
+              font-size: $font-title-laptop;
+            }
+            @include mobile {
+              font-size: $font-title-laptop;
+            }
+            @include mobile-small {
+              font-size: $font-title-laptop;
+            }
+          }
+
+          .header-discraption 
+          {
+            font-family: $font-body;
+            font-size: $font-body-size;
+            color: #ffffff;
+
+            @include laptop {
+              font-size: $font-body-laptop;
+            }
+            @include tablet {
+              font-size: $font-body-laptop;
+            }
+            @include mobile {
+              font-size: $font-body-laptop;
+            }
+            @include mobile-small {
+              font-size: $font-body-laptop;
+            }
+          }
+        }
+
+        .container-img 
+        {
+          width: 100%;
+          height: 100%;
+
+          .header-img {
+            width: 769px;
+            height: 578px;
+
+            @include laptop {
+              height: 350px;
+            }
+            @include tablet {
+              height: 450px;
+            }
+            @include mobile {
+              display: none;
+            }
+            @include mobile-small {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .container-img-phone {
+        display: none;
+        @include laptop {
+          display: none;
+        }
+        @include tablet {
+          display: none;
+        }
+        @include mobile-large {
+          display: none;
+        }
+        @include mobile {
+          display: block;
+          padding: 0px 2rem;
+        }
+        @include mobile-small {
+          padding: 0 2rem;
+          display: block;
+        }
+      }
+   
+
+    }
+  }
+   
+}

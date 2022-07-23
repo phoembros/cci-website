@@ -1,0 +1,42 @@
+@import "../../themes.scss";
+
+.map-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+
+  .map-item {
+    width: 80%;
+    height: 800px;
+
+    .map-title {
+      font-size: $font-title-size;
+      font-family: $font-title;
+      color: $primary-color;
+      text-align: center;
+      text-decoration: underline;
+      margin-top: 100px;
+      @include laptop {
+        margin-top: 80px;
+        font-size: $font-title-laptop;
+      }
+      @include tablet {
+        margin-top: 70px;
+        font-size: $font-title-tablet;
+      }
+      @include mobile-large {
+        margin-top: 60px;
+        font-size: $font-title-tablet;
+      }
+      @include mobile {
+        margin-top: 50px;
+        font-size: $font-title-tablet;
+      }
+      @include mobile-small {
+        margin-top: 40px;
+        font-size: $font-title-tablet;
+      }
+    }
+  }
+}

@@ -14,3 +14,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: Preahvihear;
+  src: url("/assets/font/Preahvihear.ttf");
+}
+
+@font-face {
+  font-family: Kantumruy;
+  src: url("/assets/font/Kantumruy-Regular.ttf");
+}
+
+.kantumruyFont {
+  font-family: Kantumruy !important;
+}

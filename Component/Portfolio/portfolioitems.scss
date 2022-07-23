@@ -1,0 +1,72 @@
+@import "../../themes.scss";
+
+.portfolio-items-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+
+  .items-container {
+    width: $width-container;
+    padding: 40px 0px;
+
+    .siplegrid-map {
+      .map-container {
+        width: 100%;
+        display: block;
+        .box-image {
+          .image-items {
+            width: 100%;
+          }
+        }
+
+        .box-details {
+          padding: 10px;
+
+          .title-image {
+            margin-top: 10px;
+            font-family: $font-title;
+            font-size: $font-title-size;
+            @include laptop {
+              font-size: $font-title-laptop;
+            }
+            @include tablet {
+              font-size: $font-title-laptop;
+            }
+            @include mobile-large {
+              font-size: $font-title-laptop;
+            }
+            @include mobile {
+              font-size: $font-title-laptop;
+            }
+            @include mobile-small {
+              font-size: $font-title-laptop;
+            }
+            color: $primary-color;
+          }
+          .details-image {
+            margin-top: 20px;
+            font-family: $font-body;
+            font-size: $font-body-size;
+            @include laptop {
+              font-size: $font-body-laptop;
+            }
+            @include tablet {
+              font-size: $font-body-laptop;
+            }
+            @include mobile-large {
+              font-size: $font-body-laptop;
+            }
+            @include mobile {
+              font-size: $font-body-laptop;
+            }
+            @include mobile-small {
+              font-size: $font-body-laptop;
+            }
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
